@@ -8,7 +8,11 @@ namespace BeeHiveManager
 {
     class Queen
     {
-        //private Worker workers = Worker[4];
+        private Worker[] workers;
         private int shiftNumber;
+        public Queen(Worker[] workers)
+        {
+            this.workers = workers;
+        }
     }
 }
