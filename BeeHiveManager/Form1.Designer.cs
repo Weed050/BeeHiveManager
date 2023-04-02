@@ -33,10 +33,10 @@
             workerBeeJob = new ComboBox();
             assignJob = new Button();
             nextShift = new Button();
-            numberOfShifts = new NumericUpDown();
+            Shifts = new NumericUpDown();
             label3 = new Label();
             report = new TextBox();
-            ((System.ComponentModel.ISupportInitialize)numberOfShifts).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Shifts).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -76,6 +76,7 @@
             assignJob.TabIndex = 3;
             assignJob.Text = "Przypisz pracę";
             assignJob.UseVisualStyleBackColor = true;
+            assignJob.Click += assignJob_Click;
             // 
             // nextShift
             // 
@@ -85,13 +86,14 @@
             nextShift.TabIndex = 4;
             nextShift.Text = "Przepracuj kolejną zmianę";
             nextShift.UseVisualStyleBackColor = true;
+            nextShift.Click += nextShift_Click;
             // 
-            // numberOfShifts
+            // Shifts
             // 
-            numberOfShifts.Location = new Point(190, 61);
-            numberOfShifts.Name = "numberOfShifts";
-            numberOfShifts.Size = new Size(120, 27);
-            numberOfShifts.TabIndex = 6;
+            Shifts.Location = new Point(190, 61);
+            Shifts.Name = "Shifts";
+            Shifts.Size = new Size(120, 27);
+            Shifts.TabIndex = 6;
             // 
             // label3
             // 
@@ -118,7 +120,7 @@
             ClientSize = new Size(480, 450);
             Controls.Add(report);
             Controls.Add(label3);
-            Controls.Add(numberOfShifts);
+            Controls.Add(Shifts);
             Controls.Add(nextShift);
             Controls.Add(assignJob);
             Controls.Add(workerBeeJob);
@@ -126,7 +128,7 @@
             Controls.Add(label1);
             Name = "Form1";
             Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)numberOfShifts).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Shifts).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -138,7 +140,7 @@
         private ComboBox workerBeeJob;
         private Button assignJob;
         private Button nextShift;
-        private NumericUpDown numberOfShifts;
+        private NumericUpDown Shifts;
         private Label label3;
         private TextBox report;
     }
