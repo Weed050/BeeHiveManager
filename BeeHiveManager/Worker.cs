@@ -29,8 +29,8 @@ namespace BeeHiveManager
             if (!string.IsNullOrEmpty(CurrentJob)) 
                 return false;
 
-                for (int i = 0; i < jobsICanDo.Length; i++)
-                {
+                for (int i = 0; i < jobsICanDo.Length; i++) // jobsICanDo to tablica
+            {
                     if (jobsICanDo[i] == job)
                     {
                         currentJob = job;
